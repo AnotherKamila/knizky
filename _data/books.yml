@@ -1,0 +1,22 @@
+INF:
+
+- title:  Learn You a Haskell for Great Good!
+  author: Miran Lipovača
+  url:    http://learnyouahaskell.com/
+  slug:   LYAH
+  owner:  Kamila
+  note:   Papierovú nemáme, ale viem požičať ebook -- napíšte mi.
+
+- title:  Algorithmic Adventures
+  author: Juraj Hromkovič
+  slug:   AlgAdv
+  owner:  Kamila
+
+
+iné:
+
+- title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
+  author: Douglas Hofstadter
+  url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html
+  slug:   GEB
+  owner:  Kamila

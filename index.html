@@ -1,0 +1,21 @@
+---
+title: Matfyzia knižnička
+---
+
+{% for cat in site.data.books %}
+    <section id={{cat[0]}}>
+        <h1>{{cat[0]}}</h1>
+        <ul id="bookslist">
+            {% for book in cat[1] %}
+                <li id={{book.slug}}>
+                    <img src="covers/{{book.slug}}.jpg" />
+                    <h2>{{book.title}}</h2>
+                    <h3 class="author">{{book.author}}</h3>
+                    {% if book.url %}
+                        <a href={{book.url}}>{{book.url}}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endfor %}
