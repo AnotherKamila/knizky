@@ -1,22 +1,56 @@
-INF:
-
-- title:  Learn You a Haskell for Great Good!
+LYAH:
+  title:  Learn You a Haskell for Great Good!
   author: Miran Lipovača
   url:    http://learnyouahaskell.com/
-  slug:   LYAH
   owner:  Kamila
   note:   Papierovú nemáme, ale viem požičať ebook -- napíšte mi.
 
-- title:  Algorithmic Adventures
+AlgAdv:
+  title:  Algorithmic Adventures
   author: Juraj Hromkovič
-  slug:   AlgAdv
   owner:  Kamila
 
-
-iné:
-
-- title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
+GEB:
+  title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
   author: Douglas Hofstadter
   url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html
-  slug:   GEB
+  owner:  Kamila
+   
+
+
+
+LYAH2:
+  title:  Learn You a Haskell for Great Good!
+  author: Miran Lipovača
+  url:    http://learnyouahaskell.com/
+  owner:  Kamila
+  note:   Papierovú nemáme, ale viem požičať ebook -- napíšte mi.
+
+AlgAdv2:
+  title:  Algorithmic Adventures
+  author: Juraj Hromkovič
+  owner:  Kamila
+
+GEB2:
+  title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
+  author: Douglas Hofstadter
+  url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html
+  owner:  Kamila
+
+LYAH3:
+  title:  Learn You a Haskell for Great Good!
+  author: Miran Lipovača
+  url:    http://learnyouahaskell.com/
+  owner:  Kamila
+  note:   Papierovú nemáme, ale viem požičať ebook -- napíšte mi.
+
+AlgAdv3:
+  title:  Algorithmic Adventures
+  author: Juraj Hromkovič
+  owner:  Kamila
+
+GEB3:
+  title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
+  author: Douglas Hofstadter
+  url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html
   owner:  Kamila

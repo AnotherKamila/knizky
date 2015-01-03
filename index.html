@@ -1,21 +1,62 @@
 ---
-title: Matfyzia knižnička
 ---
 
-{% for cat in site.data.books %}
-    <section id={{cat[0]}}>
-        <h1>{{cat[0]}}</h1>
-        <ul id="bookslist">
-            {% for book in cat[1] %}
-                <li id={{book.slug}}>
-                    <img src="covers/{{book.slug}}.jpg" />
-                    <h2>{{book.title}}</h2>
-                    <h3 class="author">{{book.author}}</h3>
-                    {% if book.url %}
-                        <a href={{book.url}}>{{book.url}}</a>
-                    {% endif %}
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Matfyzia Knižnička</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div>
+        <img src="assets/knizky.svg" />
+        <h1><span class="bg">Matfyzia</span><br />Knižnička</h1>
+      </div>
+    </header>
+
+    <div id="content">
+
+      <p>v <b>Cauchyho klubovni</b> čakajú knižky<br />od vás pre vás!</p>
+
+      <ul id="bookslist">
+        {% for book in site.data.books %}
+          <li>
+            <a class="book" id="{{book[0]}}" href="#{{book[0]}}"
+                data-cover="covers/{{book[0]}}.jpg"
+                data-title="{{book[1].title}}"
+                data-author="{{book[1].author}}"
+                data-url="{{book[1].url}}"
+                data-note="{{book[1].note}}">
+              <img src="covers/{{book[0]}}.jpg" />
+              <h2>{{book[1].title}}</h2>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div><!--content-->
+
+    <footer>
+      TODO footer
+    </footer>
+  
+    <!-- used as a very crude template, I'm a terrible person -->
+    <div id="detail" class="hide">
+      <div id="detail-content">
+        <img id="detail-cover" src="" />
+        <h2  id="detail-title"></h2>
+        <h3  id="detail-author"></h3>
+        <a   id="detail-url" href=""></a>
+        <p   id="detail-note"></p>
+        <a id="close-detail" href="#">&times;</a>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
