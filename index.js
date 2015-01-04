@@ -1,7 +1,7 @@
 //(function() {
 
-function $(id)   { return document.getElementById(id) }
-function $$(cls) { return document.getElementsByClassName(cls) }
+$  = document.getElementById.bind(document)
+$$ = document.getElementsByClassName.bind(document)
 
 // show the selected book's details in a modal
 function hide_detail() {
