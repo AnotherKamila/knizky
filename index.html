@@ -2,37 +2,39 @@
 layout: default
 ---
 
-<p>v <b>Cauchyho klubovni</b> čakajú samé dobré knižky…<br />od vás pre vás!</p>
+<div id="bookslist-wrapper">
+  <p>v <b>Cauchyho klubovni</b> čakajú samé dobré knižky…<br />od vás pre vás!</p>
 
-<ul id="bookslist">
-  {% for book in site.data.books %}
-    <li>
-      <a class="book" id="book-{{book[0]}}" href="#{{book[0]}}"
-          data-cover="covers/{{book[0]}}.jpg"
-          data-title="{{book[1].title}}"
-          data-author="{{book[1].author}}"
-          data-url="{{book[1].url}}"
-          data-owner="{{book[1].owner}}"
-          data-note="{{book[1].note}}">
-        <img src="covers/{{book[0]}}.jpg" />
-        <h2>{{book[1].title}}</h2>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  <ul id="bookslist">
+    {% for book in site.data.books %}
+      <li>
+        <a class="book" id="book-{{book[0]}}" href="#{{book[0]}}"
+            data-cover="covers/{{book[0]}}.jpg"
+            data-title="{{book[1].title}}"
+            data-author="{{book[1].author}}"
+            data-url="{{book[1].url}}"
+            data-owner="{{book[1].owner}}"
+            data-note="{{book[1].note}}">
+          <img src="covers/{{book[0]}}.jpg" />
+          <h2>{{book[1].title}}</h2>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 
-<!-- used as a very crude template, I'm a terrible person -->
-<div id="detail" style="opacity: 0; display: none">
-  <div id="detail-content">
-    <img id="detail-cover" src="" />
-    <h2  id="detail-title"></h2>
-    <h3  id="detail-author"></h3>
-    <a   id="detail-url" href=""></a>
-    <p>
-      majiteľ: <a id="detail-owner" href=""></a><br />
-      <span id="detail-note"></span>
-    </p>
-    <a id="close-detail" href="#" onclick="history.pushState({},'','#'); update_detail_view(); return false">&times;</a>
+  <!-- used as a very crude template, I'm a terrible person -->
+  <div id="detail" style="opacity: 0; display: none">
+    <div id="detail-content">
+      <img id="detail-cover" src="" />
+      <h2  id="detail-title"></h2>
+      <h3  id="detail-author"></h3>
+      <a   id="detail-url" href=""></a>
+      <p>
+        majiteľ: <a id="detail-owner" href=""></a><br />
+        <span id="detail-note"></span>
+      </p>
+      <a id="close-detail" href="#" onclick="history.pushState({},'','#'); update_detail_view(); return false">&times;</a>
+    </div>
   </div>
 </div>
 
