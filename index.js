@@ -14,7 +14,7 @@ function show_detail(id) {
     $('detail-title').textContent = $(id).getAttribute('data-title')
     $('detail-author').textContent = $(id).getAttribute('data-author')
     $('detail-url').href = $('detail-url').textContent = $(id).getAttribute('data-url')
-    $('detail-note').textContent = $(id).getAttribute('data-note')
+    $('detail-why').textContent = $(id).getAttribute('data-why')
 
     var owner = $(id).getAttribute('data-owner')
     $('detail-owner').textContent = owner

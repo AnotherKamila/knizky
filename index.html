@@ -14,7 +14,7 @@ layout: default
             data-author="{{book[1].author}}"
             data-url="{{book[1].url}}"
             data-owner="{{book[1].owner}}"
-            data-note="{{book[1].note}}">
+            data-why="{{book[1].why}}">
           <img src="covers/{{book[0]}}.jpg" />
           <h2>{{book[1].title}}</h2>
         </a>
@@ -29,10 +29,8 @@ layout: default
       <h2  id="detail-title"></h2>
       <h3  id="detail-author"></h3>
       <a   id="detail-url" href=""></a>
-      <p>
-        majiteľ: <a id="detail-owner" href=""></a><br />
-        <span id="detail-note"></span>
-      </p>
+      <p>majiteľ: <a id="detail-owner" href=""></a></p>
+      <p id="detail-why"></p>
       <a id="close-detail" href="#" onclick="history.pushState({},'','#'); update_detail_view(); return false">&times;</a>
     </div>
   </div>

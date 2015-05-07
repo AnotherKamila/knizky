@@ -1,17 +1,21 @@
+# the "why" field is required
+
 GEB:
   title:  "Gödel, Escher, Bach: An Eternal Golden Braid"
   author: Douglas Hofstadter
-  url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html
+  url:    https://prelectur.stanford.edu/lecturers/hofstadter/excerpts.html#gebxx
   owner:  Kamila
+  why:    Túto knihu si vážne chceš prečítať. Je o všeličom, čítať ju je radosť a to, čo hovorí, je vážne cool.
 
 LYAH:
   title:  Learn You a Haskell for Great Good!
   author: Miran Lipovača
   url:    http://learnyouahaskell.com/
   owner:  Kamila
-  note:   Papierovú nemáme, ale viem požičať ebook -- napíšte mi.
+  why:    Naučiť sa Haskell je výborný nápad; naučiť sa ju z tohto je absurdné a skvelé a funguje to.
 
 AlgAdv:
   title:  Algorithmic Adventures
   author: Juraj Hromkovič
   owner:  Kamila
+  why:    Krásna knižka -- prehľad cool oblastí teoretickej informatiky, napísaný príjemnou a user-friendly formou.
